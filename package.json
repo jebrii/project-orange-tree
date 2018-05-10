@@ -1,12 +1,21 @@
 {
-  "name": "portfolio-website",
+  "name": "orange-tree",
   "version": "1.0.0",
-  "description": "first npm init",
+  "description": "portfolio website",
   "main": "index.js",
   "scripts": {
     "test": "test-npm"
   },
-  "author": "",
+  "author": "jebrii",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jebrii/project-orange-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jebrii/project-orange-tree/issues"
+  },
+  "homepage": "https://github.com/jebrii/project-orange-tree#readme"
 }

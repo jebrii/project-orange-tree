@@ -1,13 +1,11 @@
-
-
-
-// Custom Variables for Bootstrap Override
-$primary: #22b3bd;
-$secondary: #ff4a4f;
-$light: #e1e1e1;
-$dark: #8c8c8c;
-$info: #66dce3;
-
+// Import jebrii sass files
+@import "custom";
+@import "home";
+@import "navbar";
+@import "functions";
 
 // Import Bootstrap Stylesheets
 @import "../../bower_components/bootstrap/scss/bootstrap";
+
+// Import Fontawesome Stylesheets
+//@import "../../bower_components/fontawesome/web-fonts-with-css/scss/fontawesome";
