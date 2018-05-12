@@ -1,15 +1,82 @@
+
+
+.navbar {
+  background-color: #fff;
+
+}
+
+#splash-container {
+  margin: 0;
+  height: 1000px;
+}
+
 #nav-logo {
   height: 50px;
 }
 
-#jumbotron-img {
+#splash-img {
   width: 100%;
+  position: fixed;
+  z-index: -1;
+  min-width: 800px;
 }
 
 #img-matte {
   background-color: #fff;
   width: 100%;
-  height: 350px;
+  height: 400px;
   position: relative;
-  top: -350px;
+  top: 200px;
+}
+
+#headshot-container {
+  position: relative;
+  top: 200px;
+
+}
+
+#headshot-background {
+  background-color: #fff;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+
+#headshot {
+  height: 370px;
+  width: 370px;
+  margin: 15px 17px;
+}
+
+#home-carousel {
+  position: relative;
+  top: -270px;
+}
+
+.carousel-item {
+  border: 2px solid $primary;
+  background-color: #fff;
+  width: 70% !important;
+  max-width: 1600px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 160px;
+  border-radius: 8px;
+}
+
+.carousel-card {
+  text-align: center;
+  p {
+    width: 55%;
+    margin: 35px auto 45px auto;
+  }
+}
+
+#body-section {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+
 }

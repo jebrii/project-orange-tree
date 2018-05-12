@@ -2,14 +2,16 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="../../styles/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="../../bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css" />
+
+  <!-- Fontawesome Script -->
+  <script defer src="../../resources/lib/fontawesome-all.js"></script>
 </head>
 <body>
 
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light">
     <a class="navbar-brand" href="#"><img id="nav-logo" src="../images/logo 1.2 text.png" /></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mr-auto">
@@ -26,10 +28,10 @@
           <a class="nav-link" href="#">Collaborators</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
             More
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
@@ -39,12 +41,12 @@
       </ul>
 
       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact-modal">Contact Henry</button>
-      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal" aria-hidden="true">
+      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-dismiss="modal">
                 <span>&times;</span>
               </button>
             </div>
@@ -64,38 +66,66 @@
 
 
 
-  <div class="showcase">
-      <img id="jumbotron-img" src="../images/stock/mountains.jpg" />
-      <div id="img-matte"></div>
-  </div>
-
-
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+  <div id="splash-container">
+    <img id="splash-img" src="../images/stock/mountains_cropped.jpg" />
+    <div class="container" id="headshot-container">
+      <div id="headshot-background">
+        <img id="headshot" src="../images/headshot.png" />
       </div>
     </div>
+    <div id="img-matte"></div>
+
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div class="carousel-card" id="carousel-card-1">
+          <h1 class="carousel-header">Open to Full-Time Employment</h1>
+          <p class="carousel-text">I'm currently in the market for a full-time engineering position in the San Fransico Bay Area.</p>
+          <a><button type="button" class="btn btn-secondary">Check Out My Resume</button></a>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div class="carousel-card" id="carousel-card-2">
+          <h1 class="carousel-header">Professional Problem Solver</h1>
+          <p class="carousel-text">I have a broad skillset and am experienced with a wide range of development, design, and operational tools.</p>
+          <a><button type="button" class="btn btn-secondary">See How I can Help You</button></a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-card" id="carousel-card-3">
+          <h1 class="carousel-header">Always Looking to Collaborate</h1>
+          <p class="carousel-text">I'd love to talk about your new idea and how I might help to bring it to fruition.</p>
+          <a><button type="button" class="btn btn-secondary">Let's Work Together</button></a>
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
+
   </div>
 
+  <div id="body-section">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  </div>
+
+
+
+
+  <!-- Bootstrap, jQuery, and Popper Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.buttflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 
   </body>
 </html>
