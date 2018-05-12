@@ -62,7 +62,7 @@
   max-width: 1600px;
   min-width: 1000px;
   margin: 0 auto;
-  padding: 60px 160px;
+  padding: 60px 80px;
   border-radius: 8px;
 }
 
@@ -72,6 +72,10 @@
     width: 55%;
     margin: 35px auto 45px auto;
   }
+}
+
+.carousel-text {
+  font-size: 140%;
 }
 
 #body-section {
