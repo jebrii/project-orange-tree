@@ -12,35 +12,39 @@
 
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-    <a class="navbar-brand" href="#"><img id="nav-logo" src="../images/logo 1.2 text.png" /></a>
+    <a class="navbar-brand" href="#"><img id="nav-logo" src="../images/logo 1.2 icon.png" /></a>
+    <div id="logo-text"><span id="name-title">Henry Raschke</span><br />IT Consulting Services</div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <svg class="nav-item-underline" width="76" height="3"><rect width="76" height="3" /></svg>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Clients</a>
+          <svg class="nav-item-underline" width="88" height="3"><rect width="88" height="3" /></svg>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Employers</a>
+          <svg class="nav-item-underline" width="128" height="3"><rect width="128" height="3" /></svg>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Collaborators</a>
+          <svg class="nav-item-underline" width="159" height="3"><rect width="159" height="3" /></svg>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
             More
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">See an Interactive Skills Breakdown</a>
+            <a class="dropdown-item" href="#">View an Application</a>
+            <a class="dropdown-item" href="#">Stay in the Loop</a>
           </div>
         </li>
       </ul>
 
-      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact-modal">Contact Henry</button>
+      <button id="nav-contact-btn" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact-modal">Contact Henry</button>
 
     </div>
   </nav>
@@ -76,11 +80,16 @@
     <div id="img-matte"></div>
 
     <div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#home-carousel" data-slide-to="1"></li>
+      <li data-target="#home-carousel" data-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item">
         <div class="carousel-card" id="carousel-card-1">
           <h1 class="carousel-header">Open to Full-Time Employment</h1>
-          <p class="carousel-text">I'm currently in the market for a full-time engineering position in the San Fransico Bay Area.</p>
+          <p class="carousel-text">I'm looking for the right team to join as a full-time engineer in the San Fransico Bay Area.</p>
           <a><button type="button" class="btn btn-secondary">Check Out My Resume</button></a>
         </div>
       </div>
@@ -88,7 +97,7 @@
       <div class="carousel-item active">
         <div class="carousel-card" id="carousel-card-2">
           <h1 class="carousel-header">Professional Problem Solver</h1>
-          <p class="carousel-text">I have a broad skillset and am experienced with a wide range of development, design, and operational tools.</p>
+          <p class="carousel-text">I have a broad skillset and am experienced with a range of development, design, and operational tools.</p>
           <a><button type="button" class="btn btn-secondary">See How I can Help You</button></a>
         </div>
       </div>
@@ -113,12 +122,65 @@
   </div>
 
   <div id="body-section">
+    <div id="body-container" class="container">
+      <div class="section-holder" id="main-sh">
+        <h1 class="section-header">What Can I Do For You?</h1>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="hover-cover"></div>
+              <img class="card-img-top" id="card-img-1" src="../images/stock/coding.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Find out how I can help you build a fully-fledged web app or website... Just like this one!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="hover-cover"></div>
+              <img class="card-img-top" id="card-img-2" src="../images/stock/busy.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">Workflow & Integrations</h5>
+                <p class="card-text">Make your small business run simply! Mu industry experience can help you to identify, implement, and master today's best software tools and IoT/IoE technology.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="hover-cover"></div>
+              <img class="card-img-top" id="card-img-3" src="../images/stock/artsy.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">Design & Concept Work</h5>
+                <p class="card-text">My skills in Abode Creative Suite and keen eye for modern design can help you to elevate your brand or present your work the way it ought to be seen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="hover-cover"></div>
+              <img class="card-img-top" id="card-img-4" src="../images/stock/pug.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">Something else</h5>
+                <p class="card-text">I'm always up for a challenge! Let's discuss how I might put my skills to the test and help you find to a creative solution to any problem.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      </div>
+
+    </div>
+
+
 
   </div>
-
 
 
 
