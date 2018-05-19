@@ -203,6 +203,7 @@ button {
     .section-header {
       font-size: 340%;
       text-align: center;
+      margin-top: 80px;
       margin-bottom: 60px;
     }
 
@@ -272,8 +273,21 @@ button {
         }
       }
     }
-    #skills-sh {
 
+    #skills-sh {
+      h2 {
+        color: $secondary;
+        font-size: 160%;
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .progress-subtext {
+        color: $dark;
+      }
+      .progress {
+        margin-top: 32px;
+        height: 30px;
+      }
     }
 
     #testimonials-sh {
@@ -293,7 +307,12 @@ button {
               }
             }
             .hover-text {
+              opacity: inherit;
               position: absolute;
+              text-align: center;
+              font-size: 200%;
+              font-weight: bold;
+              margin: 10px;
             }
 
             .card-img-top {
@@ -302,6 +321,18 @@ button {
             }
           }
         }
+      }
+
+      #btn-holder {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #testimonial-btn {
+          padding: 10px 20px;
+          font-size: 120%;
+        }
+
       }
     }
   }
