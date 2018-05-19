@@ -3,8 +3,9 @@ button {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: $backdrop;
   font-weight: bold !important;
+  border-bottom: 0.2px solid $info;
 
   #nav-logo {
     height: 60px;
@@ -81,15 +82,16 @@ button {
     width: 100%;
     position: fixed;
     z-index: -1;
-    min-width: 800px;
+    min-width: 1000px;
   }
 
   #img-matte {
-    background-color: #fff;
+    background-color: $backdrop;
     width: 100%;
     height: 400px;
     position: relative;
     top: 200px;
+    z-index: -1;
   }
 
   #headshot-container {
@@ -100,16 +102,17 @@ button {
 
   #headshot-background {
     background-color: #fff;
-    height: 400px;
-    width: 400px;
+    height: 430px;
+    width: 430px;
     border-radius: 50%;
     margin: 0 auto;
-
+    position: relative;
+    top: 32px;
   }
 
   #headshot {
-    height: 370px;
-    width: 370px;
+    height: 400px;
+    width: 400px;
     margin: 15px 17px;
   }
 
@@ -130,7 +133,7 @@ button {
         cursor: pointer;
         border: none;
         border-radius: 50%;
-        background-color: #e1e1e1;
+        background-color: $dark;
         &:hover {
           opacity: 1;
         }
@@ -179,55 +182,127 @@ button {
   }
 }
 
-#body-section {
-  background-color: white;
+#backdrop {
+  z-index: -1;
+  background-color: $backdrop;
   width: 100%;
   height: 100%;
-
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 86px;
 }
 
-.section-header {
-  font-size: 340%;
-  text-align: center;
-  margin-bottom: 60px;
-}
+#body-section {
+  position: relative;
+  top: -100vh;
 
+  #body-container {
 
-.card {
-  margin-bottom: 30px;
-  height: 680px;
-
-  .hover-cover {
-    opacity: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    background-color: #E1E1E1;
-    z-index: 1;
-
-
-    &:hover {
-      cursor: pointer;
-      opacity: 0.1;
+    // Generic Body Traits:
+    .section-header {
+      font-size: 340%;
+      text-align: center;
+      margin-bottom: 60px;
     }
-  }
 
-  .card-img-top {
-    position: absolute;
-    height: 480px;
-  }
+    .section-subheader {
+      text-align: center;
+      margin: -50px 25% 50px 25%;
+    }
+    .card {
 
-  .card-title {
-    margin-top: 500px;
-    text-align: center;
-    font-size: 200%;
-    color: $secondary;
-    font-weight: 600;
-  }
-  .card-text {
-    font-size: 110%;
-    text-align: center;
-    margin: 20px 20px;
+      .hover-cover {
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        background-color: $light;
+        z-index: 1;
+
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.1;
+        }
+      }
+    }
+
+    // Specific Section traits:
+    #main-sh {
+
+      .row {
+
+        .col-lg-6 {
+
+          .card {
+            margin-bottom: 30px;
+            height: 700px;
+
+            .hover-cover {
+
+              &:hover {
+                cursor: pointer;
+                opacity: 0.1;
+              }
+            }
+
+            .card-img-top {
+              position: absolute;
+              height: 480px;
+            }
+            .card-body {
+              position: relative;
+              top: -18px;
+              .card-title {
+                margin-top: 500px;
+                text-align: center;
+                font-size: 200%;
+                color: $secondary;
+                font-weight: 600;
+              }
+              .card-text {
+                text-align: center;
+                font-size: 110%;
+                margin: 20px 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #skills-sh {
+
+    }
+
+    #testimonials-sh {
+      .row {
+
+        .col-sm-4 {
+
+          .card {
+            margin-bottom: 30px;
+            height: 350px;
+
+            .hover-cover {
+
+              &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+              }
+            }
+            .hover-text {
+              position: absolute;
+            }
+
+            .card-img-top {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
