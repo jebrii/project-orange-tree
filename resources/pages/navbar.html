@@ -53,17 +53,59 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <h2 class="modal-title" id="contact-modal-title">Contact</h2>
           <button type="button" class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <form>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <select class="form-control" id="contact-form-identity">
+                  <option>I am...</option>
+                  <option>Looking to hire talent (an Employer)</option>
+                  <option>In need of contract services (a Client)</option>
+                  <option>Eager to discuss a project (a Collaborator)</option>
+                  <option>Literally Elon Musk</option>
+                  <option>Something Else</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="contact-form-company" placeholder="Company / Organization">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="contact-form-firstname" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="contact-form-lastname" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" id="contact-form-email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="contact-form-phone" placeholder="Phone">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <textarea rows="6" placeholder="What would you like to say?"></textarea>
+              </div>
+            </div>
+
+          </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Send Message</button>
         </div>
       </div>
     </div>
@@ -296,7 +338,7 @@
 
         </div>
 
-        <div id="btn-holder">
+        <div class="btn-holder">
           <button id="testimonial-btn" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#testimonial-modal">Leave a Testimonial</button>
           <div class="modal fade" id="testimonial-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">

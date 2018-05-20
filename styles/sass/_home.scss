@@ -2,10 +2,43 @@ button {
   font-weight: bold !important;
 }
 
+h2 {
+  color: $secondary !important;
+  font-size: 160%;
+  text-align: center !important;
+  margin-bottom: 18px;
+}
+
+textarea {
+  resize: none !important;
+}
+
+form {
+  input, select, textarea {
+    border: none !important;
+    background-color: $light !important;
+  }
+  input, select {
+    height: 3em !important;
+  }
+  textarea {
+    height: 9em !important;
+    padding: 9px;
+  }
+}
+
+.btn-holder {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar {
   background-color: $backdrop;
   font-weight: bold !important;
   border-bottom: 0.2px solid $info;
+  padding: 6px 24px !important;
 
   #nav-logo {
     height: 60px;
@@ -72,6 +105,13 @@ button {
     font-size: 130%;
   }
 
+}
+
+#contact-modal {
+  textarea {
+    width: 100%;
+    border-radius: 3px;
+  }
 }
 
 #splash-container {
@@ -275,18 +315,12 @@ button {
     }
 
     #skills-sh {
-      h2 {
-        color: $secondary;
-        font-size: 160%;
-        text-align: center;
-        margin-bottom: 18px;
-      }
       .progress-subtext {
         color: $dark;
       }
       .progress {
-        margin-top: 32px;
-        height: 30px;
+        margin-top: 24px;
+        height: 24px;
       }
     }
 
@@ -322,17 +356,9 @@ button {
           }
         }
       }
-
-      #btn-holder {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        #testimonial-btn {
-          padding: 10px 20px;
-          font-size: 120%;
-        }
-
+      #testimonial-btn {
+        padding: 10px 20px;
+        font-size: 120%;
       }
     }
   }
