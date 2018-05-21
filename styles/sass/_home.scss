@@ -230,7 +230,7 @@ form {
   position: -webkit-sticky;
   position: -moz-sticky;
   position: sticky;
-  top: 86px;
+  top: 0px;
 }
 
 #body-section {
@@ -261,11 +261,13 @@ form {
         border-radius: inherit;
         background-color: $light;
         z-index: 1;
-
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
 
         &:hover {
           cursor: pointer;
-          opacity: 0.1;
+
         }
       }
     }
@@ -279,25 +281,21 @@ form {
 
           .card {
             margin-bottom: 30px;
-            height: 700px;
 
             .hover-cover {
 
               &:hover {
-                cursor: pointer;
-                opacity: 0.1;
+                opacity: 0.25;
               }
             }
 
             .card-img-top {
-              position: absolute;
-              height: 480px;
+
             }
             .card-body {
-              position: relative;
-              top: -18px;
+              height: 140px;
+
               .card-title {
-                margin-top: 500px;
                 text-align: center;
                 font-size: 200%;
                 color: $secondary;
@@ -327,31 +325,47 @@ form {
     #testimonials-sh {
       .row {
 
-        .col-sm-4 {
+        .col-md-4 {
 
           .card {
             margin-bottom: 30px;
-            height: 350px;
 
             .hover-cover {
-
+              display: none;
+              /*
               &:hover {
-                cursor: pointer;
                 opacity: 0.8;
               }
+              &:hover + .hover-text {
+                display: block;
+              }
+              */
             }
             .hover-text {
-              opacity: inherit;
+              background-color: rgba(225,225,225,0.95);
+              opacity: 0;
               position: absolute;
               text-align: center;
               font-size: 200%;
+              line-height: 125%;
               font-weight: bold;
-              margin: 10px;
+              padding: 17% 5%;
+              height: 100%;
+              color: $secondary;
+              transition: opacity .5s ease-in-out;
+              -moz-transition: opacity .5s ease-in-out;
+              -webkit-transition: opacity .5s ease-in-out;
+
+              &:hover {
+                opacity: 1;
+              }
             }
 
             .card-img-top {
+              /*
               height: 100%;
               width: 100%;
+              */
             }
           }
         }
