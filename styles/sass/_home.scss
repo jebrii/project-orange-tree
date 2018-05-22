@@ -1,5 +1,6 @@
 button {
   font-weight: bold !important;
+
 }
 
 h2 {
@@ -24,6 +25,60 @@ form {
   textarea {
     height: 9em !important;
     padding: 9px;
+  }
+}
+
+.modal {
+  .modal-content {
+    border: 2px solid $primary;
+    padding: 10px 80px 30px 80px;
+    .modal-header {
+      border: none;
+
+      .modal-title {
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 260%;
+      }
+
+      button.close {
+        position: absolute;
+        right: 16px;
+      }
+
+    }
+
+    .modal-subtitle {
+      text-align: center;
+
+    }
+
+    .modal-body {
+
+      #contact-form-submit {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .modal-subtext {
+        text-align: center;
+        margin: 0;
+      }
+
+      #contact-modal-subtext-2 {
+        font-size: 140%;
+      }
+
+      .modal-underline {
+        display: block;
+        margin: 0 auto;
+        rect {
+          fill: $secondary;
+        }
+      }
+    }
   }
 }
 
@@ -56,7 +111,7 @@ form {
   .navbar-nav {
     .nav-item {
       margin: 0 12px;
-      font-size: 140%;
+      font-size: 120%;
       svg {
         position: relative;
         left: 2.5px;
@@ -102,7 +157,7 @@ form {
 
   #nav-contact-btn {
     padding: 8px 16px;
-    font-size: 130%;
+    font-size: 110%;
   }
 
 }
@@ -204,7 +259,7 @@ form {
           height: 370px;
 
           .carousel-text {
-            font-size: 140%;
+            font-size: 120%;
             width: 55%;
             margin: 35px auto 45px auto;
           }
@@ -346,7 +401,7 @@ form {
               opacity: 0;
               position: absolute;
               text-align: center;
-              font-size: 200%;
+              font-size: 125%;
               line-height: 125%;
               font-weight: bold;
               padding: 17% 5%;
