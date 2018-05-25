@@ -28,6 +28,7 @@ form {
   }
 }
 
+
 .modal {
   .modal-content {
     border: 2px solid $primary;
@@ -174,13 +175,14 @@ form {
 
   #splash-img {
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     z-index: -1;
     min-width: 1000px;
   }
 
   #img-matte {
-    background-color: $backdrop;
+    background-color: blue;
     width: 100%;
     height: 400px;
     position: relative;
@@ -278,13 +280,24 @@ form {
 
 #backdrop {
   z-index: -1;
-  background-color: $backdrop;
+  background-color: green;
   width: 100%;
-  height: 100%;
+  height: 70vh;
   position: -webkit-sticky;
   position: -moz-sticky;
   position: sticky;
-  top: 0px;
+  top: 82px;
+}
+
+#backdrop-stop {
+  z-index: -1;
+  background-color: yellow;
+  width: 100%;
+  height: 200px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 70vh;
 }
 
 #body-section {

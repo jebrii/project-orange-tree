@@ -123,61 +123,64 @@
 
   <div id="splash-container">
     <img id="splash-img" src="../images/stock/mountains.jpg" />
-    <div class="container" id="headshot-container">
-      <div id="headshot-background">
-        <img id="headshot" src="../images/headshot.png" />
-      </div>
-    </div>
-    <div id="img-matte"></div>
-
-    <div id="home-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#home-carousel" data-slide-to="1"></li>
-      <li data-target="#home-carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item">
-        <div class="carousel-card" id="carousel-card-1">
-          <h1 class="carousel-header">Open to Full-Time Employment</h1>
-          <p class="carousel-text">I'm looking for the right team to join as a full-time engineer in the San Fransico Bay Area.</p>
-          <a><button type="button" class="btn btn-secondary">
-            <i class="fa fa-briefcase"></i>
-            Check Out My Resume
-          </button></a>
+    <div id="headshot-carousel-content">
+      <div class="container" id="headshot-container">
+        <div id="headshot-background">
+          <img id="headshot" src="../images/headshot.png" />
         </div>
       </div>
+      <div id="img-matte"></div>
 
-      <div class="carousel-item active">
-        <div class="carousel-card" id="carousel-card-2">
-          <h1 class="carousel-header">Professional Problem Solver</h1>
-          <p class="carousel-text">I have a broad skillset and am experienced with a range of development, design, and operational tools.</p>
-          <a><button type="button" class="btn btn-secondary">
-            <i class="fa fa-compass"></i>
-            See How I can Help You
-          </button></a>
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="carousel-card" id="carousel-card-1">
+            <h1 class="carousel-header">Open to Full-Time Employment</h1>
+            <p class="carousel-text">I'm looking for the right team to join as a full-time engineer in the San Fransico Bay Area.</p>
+            <a><button type="button" class="btn btn-secondary">
+              <i class="fa fa-briefcase"></i>
+              Check Out My Resume
+            </button></a>
+          </div>
         </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="carousel-card" id="carousel-card-3">
-          <h1 class="carousel-header">Always Looking to Collaborate</h1>
-          <p class="carousel-text">I'd love to talk about your new idea and how I can help you or your team to bring it to fruition.</p>
-          <a><button type="button" class="btn btn-secondary">
-            <i class="fa fa-handshake"></i>
-            Let's Work Together
-          </button></a>
+        <div class="carousel-item active">
+          <div class="carousel-card" id="carousel-card-2">
+            <h1 class="carousel-header">Professional Problem Solver</h1>
+            <p class="carousel-text">I have a broad skillset and am experienced with a range of development, design, and operational tools.</p>
+            <a><button type="button" class="btn btn-secondary">
+              <i class="fa fa-compass"></i>
+              See How I can Help You
+            </button></a>
+          </div>
         </div>
-      </div>
 
+        <div class="carousel-item">
+          <div class="carousel-card" id="carousel-card-3">
+            <h1 class="carousel-header">Always Looking to Collaborate</h1>
+            <p class="carousel-text">I'd love to talk about your new idea and how I can help you or your team to bring it to fruition.</p>
+            <a><button type="button" class="btn btn-secondary">
+              <i class="fa fa-handshake"></i>
+              Let's Work Together
+            </button></a>
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      </div>
     </div>
-    <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-    </div>
+
 
   </div>
 
@@ -449,6 +452,7 @@
 
 
   </div>
+  <div id="backdrop-stop"></div>
 
   <nav class="navbar fixed-bottom navbar-info bg-info">
   <a class="navbar-brand" href="#">Fixed bottom</a>
