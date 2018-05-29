@@ -1,3 +1,11 @@
+// import pages
+@import "./pages/home";
 
+// import helpers
+@import "./helpers/functions";
+@import "./helpers/variables";
+@import "./helpers/mixins";
 
-@import "./vendor/bootstrap-import.scss"
+// import custom bootstrap variables
+@import "./helpers/bs-custom";
+@import "./vendor/bootstrap-import";
