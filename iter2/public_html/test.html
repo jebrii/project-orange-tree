@@ -6,11 +6,9 @@
   <!-- Fontawesome Script -->
   <script defer src="../rsc/lib/fontawesome-all.js"></script>
 </head>
+
 <body>
-
-
-
-
+<!-- ==== TOP NAVBAR ==== -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-light">
     <a class="navbar-brand" href="#"><img id="nav-logo" src="../rsc/img/logo 1.2 icon.png" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +53,7 @@
     </button>
   </nav>
 
+<!-- ==== CONTACT MODAL ==== -->
   <div class="modal fade contact-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
@@ -82,7 +81,6 @@
                 <input type="text" class="js-contact-form__company form-control" placeholder="Company / Organization">
               </div>
             </div>
-
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" class="js-contact-form__first-name form-control" placeholder="First Name">
@@ -91,7 +89,6 @@
                 <input type="text" class="js-contact-form__last-name form-control" placeholder="Last Name">
               </div>
             </div>
-
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="email" class="js-contact-form__email form-control"placeholder="Email">
@@ -100,366 +97,309 @@
                 <input type="text" class="js-contact-form__phone form-control" placeholder="Phone">
               </div>
             </div>
-
             <div class="form-row">
               <div class="form-group col-md-12">
                 <textarea class="js-contact-form__message" rows="6" placeholder="What would you like to say?"></textarea>
               </div>
             </div>
-
             <button type="button" class="js-contact-form__submit btn btn-secondary">Send Message</button>
-
           </form>
-
           <p class="modal-subtext js-contact-form__subtext--1">...or simply email</p>
           <p class="modal-subtext js-contact-form__subtext--2">henry@hraschke.com</p>
           <svg class="modal-underline" width="224" height="2"><rect width="224" height="3" /></svg>
-
         </div>
       </div>
     </div>
   </div>
 
-
-  <div class="holder holder--splash">
+<!-- ==== SPLASH IMAGE ==== -->
+  <div class="spread spread--splash">
     <img class= src="../rsc/img/stock/mountains.jpg" />
-    <div id="headshot-carousel-content">
-      <div class="container" id="headshot-container">
-        <div id="headshot-background">
-          <img id="headshot" src="../rsc/img/headshot.png" />
-        </div>
-      </div>
-      <div id="img-matte"></div>
-
-      <div id="home-carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#home-carousel" data-slide-to="1"></li>
-        <li data-target="#home-carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <div class="carousel-card" id="carousel-card-1">
-            <h1 class="carousel-header">Open to Full-Time Employment</h1>
-            <p class="carousel-text">I'm looking for the right team to join as a full-time engineer in the San Fransico Bay Area.</p>
-            <a><button type="button" class="btn btn-secondary">
-              <i class="fa fa-briefcase"></i>
-              Check Out My Resume
-            </button></a>
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-card" id="carousel-card-2">
-            <h1 class="carousel-header">Professional Problem Solver</h1>
-            <p class="carousel-text">I have a broad skillset and am experienced with a range of development, design, and operational tools.</p>
-            <a><button type="button" class="btn btn-secondary">
-              <i class="fa fa-compass"></i>
-              See How I can Help You
-            </button></a>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carousel-card" id="carousel-card-3">
-            <h1 class="carousel-header">Always Looking to Collaborate</h1>
-            <p class="carousel-text">I'd love to talk about your new idea and how I can help you or your team to bring it to fruition.</p>
-            <a><button type="button" class="btn btn-secondary">
-              <i class="fa fa-handshake"></i>
-              Let's Work Together
-            </button></a>
-          </div>
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-      </div>
-    </div>
-
-
   </div>
 
-  <div id="backdrop"></div>
-  <div id="body-section">
-    <div id="body-container" class="container">
+<!-- ==== HEADSHOT AND CAROUSEL ==== -->
+  <div class="section section--carousel">
+    <div class="container container--headshot">
+      <div class="matte matte-headshot">
+        <img class="headshot headshot--main" src="../rsc/img/headshot.png" />
+      </div>
+    </div>
+    <div class="matte matte--carousel"></div>
 
-      <div class="section-holder" id="main-sh">
-        <h1 class="section-header">What Can I Do For You?</h1>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <img class="card-img-top" id="main-crd-img-1" src="../rsc/img/stock/coding.jpg" />
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">Find out how I can help you build a fully-fledged web app or website... Just like this one!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <img class="card-img-top" id="main-crd-img-2" src="../rsc/img/stock/busy.jpg" />
-              <div class="card-body">
-                <h5 class="card-title">Workflow & Integrations</h5>
-                <p class="card-text">Make your small business run simply! My industry experience can help you to identify, implement, and master today's best software tools and IoT/IoE technology.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <img class="card-img-top" id="main-crd-img-3" src="../rsc/img/stock/artsy.jpg" />
-              <div class="card-body">
-                <h5 class="card-title">Design & Concept Work</h5>
-                <p class="card-text">My skills in Abode Creative Suite and keen eye for modern design can help you to elevate your brand or present your work the way it ought to be seen.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <img class="card-img-top" id="main-crd-img-4" src="../rsc/img/stock/pug.jpg" />
-              <div class="card-body">
-                <h5 class="card-title">Something Else</h5>
-                <p class="card-text">I'm always up for a challenge! Let's discuss how I might put my skills to the test and help you find to a creative solution to any problem.</p>
-              </div>
-            </div>
-          </div>
-
+    <div id="js-home-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#home-carousel" data-slide-to="1"></li>
+      <li data-target="#home-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div class="carousel-card carousel-card--1">
+          <h1 class="carousel-header">Open to Full-Time Employment</h1>
+          <p class="carousel-text">I'm looking for the right team to join as a full-time engineer in the San Fransico Bay Area.</p>
+          <a><button type="button" class="btn btn-secondary">
+            <i class="fa fa-briefcase"></i>
+            Check Out My Resume
+          </button></a>
         </div>
       </div>
-
-
-
-
-
-
-      <div class="section-holder" id="skills-sh">
-        <h1 class="section-header">Skills</h1>
-        <p class="section-subheader">I've always sought to create things for other people to enjoy. Here are just a few of the skills I've picked up along the way.</p>
-        <div class="row">
-          <div class="col-md-5">
-            <h2>A Modern Perspective</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget purus vitae lacus volutpat auctor. Sed fermentum urna in maximus scelerisque. Sed eros eros, pretium at nisl ac, convallis fermentum libero. Donec fermentum nisl a luctus vulputate. Quisque dui nisl, scelerisque id interdum non, pharetra id nisi. Donec ligula ligula, venenatis vel lorem non, hendrerit ullamcorper est. Vivamus sed lectus congue ante maximus vestibulum. Ut a quam vestibulum, sollicitudin ligula quis, vestibulum quam. Phasellus lobortis ut velit ac dictum. Maecenas facilisis vestibulum tristique. Quisque ultrices nisi sed vehicula consequat.
-              <br /><br />
-              In laoreet vulputate urna. Maecenas massa ex, luctus sed est a, pretium placerat est. Morbi ligula tellus, ornare aliquet ante et, ultrices faucibus risus. Vestibulum ut lectus gravida, feugiat diam ut, sodales nisi. Aliquam porttitor, mauris et imperdiet vulputate, justo urna egestas felis, vitae rhoncus augue mi nec risus. Morbi sit amet fermentum ligula. Nulla sit amet bibendum felis. Nunc cursus nunc ante, et finibus justo ullamcorper id. Vestibulum turpis metus, rutrum vitae tempus vitae, vehicula a orci. Mauris leo justo, venenatis sagittis neque vel, pulvinar maximus magna. Cras mollis mauris non dui laoreet, nec sagittis dolor volutpat.
-              <br /><br />
-            </p>
-          </div>
-          <div class="col-md-7">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 65%"></div>
-            </div>
-            <p class="progress-subtext">Developing Interactive Websites</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 55%"></div>
-            </div>
-            <p class="progress-subtext">Applications, Technical Liaison, and Project Management</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 65%"></div>
-            </div>
-            <p class="progress-subtext">Visual Design with Adobe CC Tools</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 75%"></div>
-            </div>
-            <p class="progress-subtext">Building Systems with Commercial Software Tools</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-            </div>
-            <p class="progress-subtext">Managing IP and Smart Device Networks</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 35%"></div>
-            </div>
-            <p class="progress-subtext">Object-Oriented Programming</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 95%"></div>
-            </div>
-            <p class="progress-subtext">Getting Code from Stack Overflow Posts</p>
-
-          </div>
+      <div class="carousel-item active">
+        <div class="carousel-card carousel-card--2">
+          <h1 class="carousel-header">Professional Problem Solver</h1>
+          <p class="carousel-text">I have a broad skillset and am experienced with a range of development, design, and operational tools.</p>
+          <a><button type="button" class="btn btn-secondary">
+            <i class="fa fa-compass"></i>
+            See How I can Help You
+          </button></a>
         </div>
-
-
       </div>
-
-
-
-
-
-
-
-
-      <div class="section-holder" id="testimonials-sh">
-        <h1 class="section-header">Testimonials</h1>
-        <p class="section-subheader">See what  people are saying!<br />Every portfolio website needs a testimonials section... right?</p>
-
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"Kitten Sleeping in a Basket consistently goes above and beyond to deliver the customer engagement our brand deserves."</p>
-              <img class="card-img-top" id="test-crd-img-1" src="../rsc/img/stock/kitten.jpg" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"At first, I didn't know whether Hipster Latte Art was right for my small business. In the end, I found it to be simple and easy to integrate. We are on track for full ROI within months."</p>
-              <img class="card-img-top" id="test-crd-img-2" src="../rsc/img/stock/coffee.jpg" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"I'm never dissatisfied with Tom Hanks. The impact of his work shows in the quality of the product. We would hire him again in a heartbeat."</p>
-              <img class="card-img-top" id="test-crd-img-3" src="../rsc/img/stock/tom hanks.jpg" />
-            </div>
-          </div>
-
+      <div class="carousel-item">
+        <div class="carousel-card carousel-card--3">
+          <h1 class="carousel-header">Always Looking to Collaborate</h1>
+          <p class="carousel-text">I'd love to talk about your new idea and how I can help you or your team to bring it to fruition.</p>
+          <a><button type="button" class="btn btn-secondary">
+            <i class="fa fa-handshake"></i>
+            Let's Work Together
+          </button></a>
         </div>
-        <div class="row">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#js-home-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#js-home-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
+  </div>
 
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"Henry is a very smart, hightly motivated and reliable individual who delivers high quality work while maintaining a positive and friendly attitude."</p>
-              <img class="card-img-top" id="test-crd-img-4" src="../rsc/img/headshot2.jpg" />
+<!-- ==== SERVICES ==== -->
+  <div class="section section--services">
+    <div class="container container--services">
+      <h1 class="section-header">What Can I Do For You?</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <img class="card-img-top card-img-top--services" src="../rsc/img/stock/coding.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Find out how I can help you build a fully-fledged web app or website... Just like this one!</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"I enlisted Being Wrapped in Comfy Blankets for a small-scale project, but soon found that it had the skillsets I could trust with my broader business ventures."</p>
-              <img class="card-img-top" id="test-crd-img-5" src="../rsc/img/stock/comfy.jpg" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="hover-cover"></div>
-              <p class="hover-text">"Once our company opted to go with Freshly-Baked Pie, we quickly realized that other options like cake were a thing of the past. Now we can't work without it!"</p>
-              <img class="card-img-top" id="test-crd-img-6" src="../rsc/img/stock/pie.jpg" />
-            </div>
-          </div>
-
         </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <img class="card-img-top card-img-top--services" src="../rsc/img/stock/busy.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Workflow & Integrations</h5>
+              <p class="card-text">Make your small business run simply! My industry experience can help you to identify, implement, and master today's best software tools and IoT/IoE technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <img class="card-img-top card-img-top--services" src="../rsc/img/stock/artsy.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Design & Concept Work</h5>
+              <p class="card-text">My skills in Abode Creative Suite and keen eye for modern design can help you to elevate your brand or present your work the way it ought to be seen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <img class="card-img-top card-img-top--services" src="../rsc/img/stock/pug.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Something Else</h5>
+              <p class="card-text">I'm always up for a challenge! Let's discuss how I might put my skills to the test and help you find to a creative solution to any problem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="btn-holder">
+<!-- ==== SKILLS ==== -->
+  <div class="section section--skills">
+    <div class="container container--skills">
+      <h1 class="section-header">Skills</h1>
+      <p class="section-subheader">I've always sought to create things for other people to enjoy. Here are just a few of the skills I've picked up along the way.</p>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>A Modern Perspective</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget purus vitae lacus volutpat auctor. Sed fermentum urna in maximus scelerisque. Sed eros eros, pretium at nisl ac, convallis fermentum libero. Donec fermentum nisl a luctus vulputate. Quisque dui nisl, scelerisque id interdum non, pharetra id nisi. Donec ligula ligula, venenatis vel lorem non, hendrerit ullamcorper est. Vivamus sed lectus congue ante maximus vestibulum. Ut a quam vestibulum, sollicitudin ligula quis, vestibulum quam. Phasellus lobortis ut velit ac dictum. Maecenas facilisis vestibulum tristique. Quisque ultrices nisi sed vehicula consequat.
+            <br /><br />
+            In laoreet vulputate urna. Maecenas massa ex, luctus sed est a, pretium placerat est. Morbi ligula tellus, ornare aliquet ante et, ultrices faucibus risus. Vestibulum ut lectus gravida, feugiat diam ut, sodales nisi. Aliquam porttitor, mauris et imperdiet vulputate, justo urna egestas felis, vitae rhoncus augue mi nec risus. Morbi sit amet fermentum ligula. Nulla sit amet bibendum felis. Nunc cursus nunc ante, et finibus justo ullamcorper id. Vestibulum turpis metus, rutrum vitae tempus vitae, vehicula a orci. Mauris leo justo, venenatis sagittis neque vel, pulvinar maximus magna. Cras mollis mauris non dui laoreet, nec sagittis dolor volutpat.
+            <br /><br />
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+          </div>
+          <p class="progress-subtext">Developing Interactive Websites</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 55%"></div>
+          </div>
+          <p class="progress-subtext">Applications, Technical Liaison, and Project Management</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+          </div>
+          <p class="progress-subtext">Visual Design with Adobe CC Tools</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+          </div>
+          <p class="progress-subtext">Building Systems with Commercial Software Tools</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+          </div>
+          <p class="progress-subtext">Managing IP and Smart Device Networks</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+          </div>
+          <p class="progress-subtext">Object-Oriented Programming</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 55%"></div>
+          </div>
+          <p class="progress-subtext">Collaborating with Teams Using Git</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+          </div>
+          <p class="progress-subtext">Getting Code from Stack Overflow Posts</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <button id="testimonial-btn" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#testimonial-modal">
-            <i class="fa fa-star"></i> Leave a Testimonial
+<!-- ==== TESTIMONIALS ==== -->
+  <div class="section section--testimonials">
+    <div class="container container--skills">
+      <h1 class="section-header">Testimonials</h1>
+      <p class="section-subheader">See what  people are saying!<br />Every portfolio website needs a testimonials section... right?</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"Kitten Sleeping in a Basket consistently goes above and beyond to deliver the customer engagement our brand deserves."</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/stock/kitten.jpg" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"At first, I didn't know whether Hipster Latte Art was right for my small business. In the end, I found it to be simple and easy to integrate. We are on track for full ROI within months."</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/stock/coffee.jpg" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"I'm never dissatisfied with Tom Hanks. The impact of his work shows in the quality of the product. We would hire him again in a heartbeat."</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/stock/tom hanks.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"Henry is a very smart, hightly motivated and reliable individual who delivers high quality work while maintaining a positive and friendly attitude."</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/headshot2.jpg" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"I enlisted Being Wrapped in Comfy Blankets for a small-scale project, but soon found that it had the skillsets I could trust with my broader business ventures."</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/stock/comfy.jpg" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="hover-cover"></div>
+            <p class="hover-text">"Once our company opted to go with Freshly-Baked Pie, we quickly realized that other options like cake were a thing of the past. Now we can't work without it!"</p>
+            <img class="card-img-top card-img-top--testimonial" src="../rsc/img/stock/pie.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="holder holder--btn">
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#js-testimonial-modal">
+          <i class="fa fa-star"></i> Leave a Testimonial
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- ==== TESTIMONIALS MODAL ==== -->
+  <div class="modal fade" id="js-testimonial-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Leave a Testimonial</h2>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
           </button>
-
-
-          <div class="modal fade" id="testimonial-modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="testimonial-modal-title">Leave a Testimonial</h2>
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                  </button>
-                </div>
-                <p class="modal-subtitle">Say something about me, my work, or just about anything you happen to like a whole lot!</p>
-                <div class="modal-body">
-                  <form>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="testimonial-form-firstname" placeholder="First Name">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="testimonial-form-lastname" placeholder="Last Name">
-                      </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <input type="email" class="form-control" id="testimonial-form-email" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="testimonial-form-company" placeholder="Company / Organization">
-                      </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
-                        <textarea rows="4" placeholder="What would you like to say?"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="testimonial-check-publish">
-                          <label class="custom-control-label" for="testimonial-check-publish">You can put up my testimonial for all to see!</label>
-                        </div>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="testimonial-check-anonymous">
-                          <label class="custom-control-label" for="You can show my name and/or company">You can show my name and/or company</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <button type="button" id="testimonial-form-submit" class="btn btn-secondary">Submit</button>
-
-                  </form>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="modal fade" id="testimonial-modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+        <p class="modal-subtitle">Say something about me, my work, or just about anything you happen to like a whole lot!</p>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="js-testimonial-form-firstname" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="js-testimonial-form-lastname" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" id="js-testimonial-form-email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="js-testimonial-form-company" placeholder="Company / Organization">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <textarea rows="4" placeholder="What would you like to say?"></textarea>
+              </div>
+            </div>
+            <div class="form row">
+              <div class="form-group col-md-6">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="js-testimonial-check-publish">
+                  <label class="custom-control-label" for="testimonial-check-publish">You can put up my testimonial for all to see!</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="js-testimonial-check-anonymous">
+                  <label class="custom-control-label" for="You can show my name and/or company">You can show my name and/or company</label>
+                </div>
+              </div>
+            </div>
 
+            <button type="button" id="js-testimonial-form-submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
       </div>
-
     </div>
-
-
-
   </div>
-  <div id="backdrop-stop"></div>
 
+<!-- ==== FOOTER ==== -->
   <nav class="navbar fixed-bottom navbar-info bg-info">
-  <a class="navbar-brand" href="#">Fixed bottom</a>
-</nav>
+    <a class="navbar-brand" href="#">Fixed bottom</a>
+  </nav>
 
 
 
+<!-- ==== SCRIPTS ==== -->
   <!-- Bootstrap, jQuery, and Popper Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -468,7 +408,7 @@
   <script type="text/javascript">
 
   function setCardHeight() {
-    $(".section-holder").each(function(){
+    $(".section").each(function(){
       var largest = 0;
       $(this).find(".card-body").each(function(){
         var findHeight = $(this).height() + parseInt($(this).css("padding-bottom")) + parseInt($(this).css("padding-top")) ;
