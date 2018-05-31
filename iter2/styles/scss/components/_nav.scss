@@ -1,9 +1,20 @@
 .navbar {
   background-color: $backdrop;
   font-weight: bold !important;
-  border-bottom: 0.2px solid $info;
   padding: 6px 24px !important;
 
+  &.sticky-top {
+    border-top: 5px solid $info;
+    top: -5px;
+  }
+
+  .navbar__side-space {
+    width: 20%;
+    min-width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .icon--logo {
     height: 60px;
   }
@@ -66,12 +77,18 @@
   }
 }
 
+.matte--spacer {
+  height: 150px;
+}
+
 .footer {
+  border-top: 2px solid $primary;
+
   .footer_col {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     .footer__fa {
       color: black;
       font-size: 4em;

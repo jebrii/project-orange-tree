@@ -8,109 +8,7 @@
 </head>
 
 <body>
-<!-- ==== TOP NAVBAR ==== -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-    <a class="navbar-brand" href="#"><img class="icon--logo" src="../rsc/img/logo 1.2 icon.png" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#js-navbar-collapse-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse">
-      <div class="navbar__holder--logo-text"><span class="navbar__logo-text">Henry Raschke</span><br />IT Consulting Services</div>
-    </div>
-    <div id="js-navbar-collapse-menu" class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-          <svg class="underline underline--nav" width="75" height="3"><rect width="100%" height="3" /></svg>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Clients</a>
-          <svg class="underline underline--nav" width="88" height="3"><rect width="100%" height="3" /></svg>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Employers</a>
-          <svg class="underline underline--nav" width="128" height="3"><rect width="100%" height="3" /></svg>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Collaborators</a>
-          <svg class="underline underline--nav" width="159" height="3"><rect width="100%" height="3" /></svg>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-            More
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">See an Interactive Skills Breakdown</a>
-            <a class="dropdown-item" href="#">View an Application</a>
-            <a class="dropdown-item" href="#">Stay in the Loop</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <button class="btn btn-secondary navbar__contact-btn" type="button" data-toggle="modal" data-target="#js-contact-modal">
-      <i class="fa fa-envelope"></i>
-      Contact Henry
-    </button>
-  </nav>
 
-<!-- ==== CONTACT MODAL ==== -->
-  <div id="js-contact-modal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal__header">
-          <h2 class="modal-title contact-modal__title">Contact</h2>
-          <button type="button" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <p class="modal-subtitle">Send a message directly to Henry</p>
-        <div class="modal-body">
-          <form id="js-contact-form" class="modal-form">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <select id="js-contact-form__intent" class="form-control">
-                  <option value="" disabled selected>I am...</option>
-                  <option>Looking to hire talent</option>
-                  <option>In need of contract services</option>
-                  <option>Eager to discuss a project</option>
-                  <option>Literally Elon Musk</option>
-                  <option>Something Else</option>
-                </select>
-              </div>
-              <div class="form-group col-md-6">
-                <input id="js-contact-form__company" class="form-control" type="text" placeholder="Company / Organization">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input id="js-contact-form__first-name" class="form-control" type="text" placeholder="First Name">
-              </div>
-              <div class="form-group col-md-6">
-                <input id="js-contact-form__last-name" class="form-control" type="text" placeholder="Last Name">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input id="js-contact-form__email" class="form-control" type="email"placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <input id="js-contact-form__phone" class="form-control" type="text" placeholder="Phone">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <textarea class="js-contact-form__message" rows="6" placeholder="What would you like to say?"></textarea>
-              </div>
-            </div>
-            <button id="js-contact-form__submit" class="btn btn-secondary modal__submit-btn" type="button">Send Message</button>
-          </form>
-          <p class="modal-subtext modal__subtext--1">...or simply email</p>
-          <p class="modal-subtext modal__subtext--2">henry@hraschke.com</p>
-          <svg class="modal-underline" width="224" height="2"><rect width="224" height="3" /></svg>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <!-- ==== SPLASH IMAGE ==== -->
   <div class="container-fluid spread spread--splash">
@@ -171,6 +69,114 @@
     </div>
     <div class="container-fluid matte matte--carousel"></div>
   </div>
+
+  <!-- ==== TOP NAVBAR ==== -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="navbar__side-space">
+        <div>
+          <a class="navbar-brand" href="#"><img class="icon--logo" src="../rsc/img/logo 1.2 icon.png" /></a>
+          </div>
+        <div class="navbar__holder--logo-text"><span class="navbar__logo-text">Henry Raschke</span><br />IT Consulting Services</div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#js-navbar-collapse-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="js-navbar-collapse-menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+            <svg class="underline underline--nav" width="75" height="3"><rect width="100%" height="3" /></svg>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clients</a>
+            <svg class="underline underline--nav" width="88" height="3"><rect width="100%" height="3" /></svg>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Employers</a>
+            <svg class="underline underline--nav" width="128" height="3"><rect width="100%" height="3" /></svg>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Collaborators</a>
+            <svg class="underline underline--nav" width="159" height="3"><rect width="100%" height="3" /></svg>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+              More
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">See an Interactive Skills Breakdown</a>
+              <a class="dropdown-item" href="#">View an Application</a>
+              <a class="dropdown-item" href="#">Stay in the Loop</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__side-space">
+        <button class="btn btn-secondary navbar__contact-btn" type="button" data-toggle="modal" data-target="#js-contact-modal">
+          <i class="fa fa-envelope"></i>
+          Contact Henry
+        </button>
+      </div>
+    </nav>
+
+  <!-- ==== CONTACT MODAL ==== -->
+    <div id="js-contact-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal__header">
+            <h2 class="modal-title contact-modal__title">Contact</h2>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <p class="modal-subtitle">Send a message directly to Henry</p>
+          <div class="modal-body">
+            <form id="js-contact-form" class="modal-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <select id="js-contact-form__intent" class="form-control">
+                    <option value="" disabled selected>I am...</option>
+                    <option>Looking to hire talent</option>
+                    <option>In need of contract services</option>
+                    <option>Eager to discuss a project</option>
+                    <option>Literally Elon Musk</option>
+                    <option>Something Else</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <input id="js-contact-form__company" class="form-control" type="text" placeholder="Company / Organization">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input id="js-contact-form__first-name" class="form-control" type="text" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <input id="js-contact-form__last-name" class="form-control" type="text" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input id="js-contact-form__email" class="form-control" type="email"placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <input id="js-contact-form__phone" class="form-control" type="text" placeholder="Phone">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <textarea class="js-contact-form__message" rows="6" placeholder="What would you like to say?"></textarea>
+                </div>
+              </div>
+              <button id="js-contact-form__submit" class="btn btn-secondary modal__submit-btn" type="button">Send Message</button>
+            </form>
+            <p class="modal-subtext modal__subtext--1">...or simply email</p>
+            <p class="modal-subtext modal__subtext--2">henry@hraschke.com</p>
+            <svg class="modal-underline" width="224" height="2"><rect width="224" height="3" /></svg>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- ==== SERVICES ==== -->
   <div class="section section--services">
@@ -397,15 +403,16 @@
     </div>
   </div>
 
+  <!-- div class="matte--spacer"></div -->
 <!-- ==== FOOTER ==== -->
-  <nav class="navbar fixed-bottom navbar-info bg-info footer">
+  <nav class="navbar default navbar-info bg-info footer">
     <div class="container-fluid footer__container">
       <div class="row">
         <div class="col-sm-3 footer_col">
-          <a class="link--icon footer__link--icon" href="https://www.linkedin.com/in/hraschke/"><i class="fa fa-linkedin footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://angel.co/henry-raschke"><i class="fa fa-angellist footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://stackoverflow.com/users/6080441/jebrii"><i class="fa fa-stack-overflow footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://github.com/jebrii"><i class="fa fa-github footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://www.linkedin.com/in/hraschke/"><i class="fab fa-linkedin footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://angel.co/henry-raschke"><i class="fab fa-angellist footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://stackoverflow.com/users/6080441/jebrii"><i class="fab fa-stack-overflow footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://github.com/jebrii"><i class="fab fa-github footer__fa"></i></a>
         </div>
         <div class="col-sm-6 footer_col">
           <p class="muted-text muted footer__muted">
@@ -417,9 +424,9 @@
           </p>
         </div>
         <div class="col-sm-3 footer_col">
-          <a class="link--icon footer__link--icon" href="https://www.facebook.com/h3nryraschke"><i class="fa fa-facebook footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://www.instagram.com/imakelotsafood"><i class="fa fa-instagram footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://open.spotify.com/user/125879991?si=VjWvSTzeQ4GhUaw111zDyA"><i class="fa fa-spotify footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://www.facebook.com/h3nryraschke"><i class="fab fa-facebook footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://www.instagram.com/imakelotsafood"><i class="fab fa-instagram footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" href="https://open.spotify.com/user/125879991?si=VjWvSTzeQ4GhUaw111zDyA"><i class="fab fa-spotify footer__fa"></i></a>
           <a class="link--icon footer__link--icon" href="https://unsplash.com/"><i class="fa fa-camera footer__fa"></i></a>
         </div>
       </div>
