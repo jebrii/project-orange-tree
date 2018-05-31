@@ -403,31 +403,30 @@
     </div>
   </div>
 
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+  </button>
   <!-- div class="matte--spacer"></div -->
 <!-- ==== FOOTER ==== -->
   <nav class="navbar default navbar-info bg-info footer">
     <div class="container-fluid footer__container">
       <div class="row">
         <div class="col-sm-3 footer_col">
-          <a class="link--icon footer__link--icon" href="https://www.linkedin.com/in/hraschke/"><i class="fab fa-linkedin footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://angel.co/henry-raschke"><i class="fab fa-angellist footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://stackoverflow.com/users/6080441/jebrii"><i class="fab fa-stack-overflow footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://github.com/jebrii"><i class="fab fa-github footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://www.linkedin.com/in/hraschke/"><i class="fab fa-linkedin footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://angel.co/henry-raschke"><i class="fab fa-angellist footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://stackoverflow.com/users/6080441/jebrii"><i class="fab fa-stack-overflow footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://github.com/jebrii"><i class="fab fa-github footer__fa"></i></a>
         </div>
         <div class="col-sm-6 footer_col">
           <p class="muted-text muted footer__muted">
             Everything on this site was build from scratch in May 2018 by Henry Raschke.
-            <br />
-            He's a cool guy.
-            <br />
-            Have you heard? I'm told he has a website.
           </p>
         </div>
         <div class="col-sm-3 footer_col">
-          <a class="link--icon footer__link--icon" href="https://www.facebook.com/h3nryraschke"><i class="fab fa-facebook footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://www.instagram.com/imakelotsafood"><i class="fab fa-instagram footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://open.spotify.com/user/125879991?si=VjWvSTzeQ4GhUaw111zDyA"><i class="fab fa-spotify footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" href="https://unsplash.com/"><i class="fa fa-camera footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://www.facebook.com/h3nryraschke"><i class="fab fa-facebook footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://www.instagram.com/imakelotsafood"><i class="fab fa-instagram footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://open.spotify.com/user/125879991?si=VjWvSTzeQ4GhUaw111zDyA"><i class="fab fa-spotify footer__fa"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://unsplash.com/"><i class="fa fa-camera footer__fa" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Photo credit: https://www.unsplash.com"></i></a>
         </div>
       </div>
     </div>
@@ -438,8 +437,8 @@
 <!-- ==== SCRIPTS ==== -->
   <!-- Bootstrap, jQuery, and Popper Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 
   <script type="text/javascript">
 
@@ -461,18 +460,29 @@
   function setUnderlineWidth() {
     $(".nav-item.active").each( function() {
       var width = $(this).width();
-      console.log(width);
-      $(this).find(".underline underline--nav").css({
+      $(this).find(".underline--nav").css({
         "width": width,
+        "padding-left": 8,
+        "padding-right": 8,
       });
     });
   }
 
-  $(document).ready( function() {
+  function maintainElements() {
+    setUnderlineWidth();
     setCardHeight();
+  }
+
+  $(document).ready( function() {
+    // Make certain everything is sized correctly
+    maintainElements();
+    // Enable popovers
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
   });
 
-  window.addEventListener('resize', setCardHeight);
+  window.addEventListener('resize', maintainElements);
   </script>
 
   </body>
