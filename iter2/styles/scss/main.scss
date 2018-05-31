@@ -1,24 +1,9 @@
-// import helpers
-@import "./helpers/functions";
-@import "./helpers/variables";
-@import "./helpers/mixins";
+// REMINDER: order matters!
 
-// import themes
 @import "./themes/bs-custom";
 
-// import vendors
-@import "./vendor/bootstrap-import";
-
-// import base
-@import "./base/styling";
-
-// import components
-@import "./components/btn";
-@import "./components/nav";
-@import "./components/form";
-@import "./components/modal";
-@import "./components/carousel";
-@import "./components/card";
-
-// import pages
-@import "./pages/home";
+@import "./helpers/helpers-dir";
+@import "./vendor/vendor-dir";
+@import "./base/base-dir";
+@import "./components/components-dir";
+@import "./pages/pages-dir";
