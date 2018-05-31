@@ -1,0 +1,56 @@
+.modal {
+  .modal-content {
+    border: 2px solid $primary;
+    padding: 10px 80px 30px 80px;
+    .modal__header {
+      border: none;
+
+      .modal-title {
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 260%;
+      }
+
+      button.close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+    }
+
+    .modal-subtitle {
+      position: relative;
+      top: 10px;
+      text-align: center;
+
+    }
+
+    .modal-body {
+
+      .modal__submit-btn {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .modal-subtext {
+        text-align: center;
+        margin: 0;
+      }
+
+      .modal__subtext--2 {
+        font-size: 140%;
+      }
+
+      .modal-underline {
+        display: block;
+        margin: 0 auto;
+        rect {
+          fill: $secondary;
+        }
+      }
+    }
+  }
+}

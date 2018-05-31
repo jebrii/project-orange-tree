@@ -1,0 +1,66 @@
+.carousel {
+  padding-bottom: 60px;
+
+  .carousel-indicators {
+    li {
+      opacity: 0.5;
+      top: 8px;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 8px 12px;
+      text-indent: 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      background-color: $dark;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .active {
+      width: 12px;
+      height: 12px;
+      margin: 6px 10px;
+      background-color: $secondary;
+    }
+  }
+
+  .carousel-inner {
+
+    .carousel-item {
+      max-width: 1600px;
+      min-width: 1000px;
+      margin: 0 auto;
+
+      .carousel-card {
+        background-color: #fff;
+        width: 70% !important;
+        padding: 60px 80px;
+        margin: 0 auto;
+        border: 2px solid $primary;
+        border-radius: 10px;
+        text-align: center;
+        height: 370px;
+
+        .carousel-text {
+          font-size: 120%;
+          width: 55%;
+          margin: 35px auto 45px auto;
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev {
+
+    .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff4a4f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+  }
+  .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff4a4f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}

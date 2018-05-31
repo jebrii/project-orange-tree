@@ -1,0 +1,52 @@
+body {
+  min-width: 1000px;
+  color: $primary !important;
+}
+
+h2 {
+  color: $secondary !important;
+  font-size: 160%;
+  text-align: center !important;
+  margin-bottom: 18px;
+}
+
+.spread {
+  padding: 0;
+}
+
+.matte {
+
+}
+
+.section, .matte {
+  background-color: $backdrop;
+  width: 100%;
+  z-index: -1;
+}
+
+.section {
+  padding: 40px 0;
+
+  .section__header {
+    font-size: 340%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .section__subheader {
+    text-align: center;
+    margin: -50px 25% 50px 25%;
+  }
+}
+
+.row {
+  padding: 20px 0;
+}
+
+.container-fluid {
+  .row {
+    width: 100%;
+    margin: 0 10%;
+  }
+}

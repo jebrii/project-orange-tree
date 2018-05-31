@@ -1,0 +1,19 @@
+form {
+  input, select, textarea {
+    border: none !important;
+    background-color: $light !important;
+  }
+  input, select {
+    height: 3em !important;
+  }
+  textarea {
+    height: 9em !important;
+    padding: 9px;
+    width: 100%;
+  }
+}
+
+textarea {
+  border-radius: 4px;
+  resize: none !important;
+}
