@@ -104,9 +104,9 @@
               More
             </a>
             <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">See What I'm Up To</a>
               <a class="dropdown-item" href="#">See an Interactive Skills Breakdown</a>
-              <a class="dropdown-item" href="#">View an Application</a>
-              <a class="dropdown-item" href="#">Stay in the Loop</a>
+              <a class="dropdown-item" href="#">View a Job Application</a>
             </div>
           </li>
         </ul>
@@ -244,7 +244,7 @@
             <br /><br />
             As a result of this philosophy, I've always sought to cultivate a wide variety of skills. Along with this has also come a plethora of random knowledge and facts... (which make me an excellent trivia team member!)
             <br /><br />
-            Hover over each of the bars to see a description. Moreover, click the button below to visit an interactive skills page.
+            Hover over each of the bars to see a description.
           </p>
           <div class="holder holder--btn">
             <a class="skills-link" href="#">
@@ -256,38 +256,38 @@
           </div>
         </div>
         <div class="col-md-7">
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="I have a strong foundation in HTML, CSS, and JavaScript, including jQuery and Bootstrap libraries. I'm always pushing the envelope and learning new frameworks, strategies, and technologies. I’m also happy to work with you to build a simpler website with tools like Squarespace, Wix, or WordPress.com.">
             <div class="progress-bar" role="progressbar" style="width: 65%"></div>
           </div>
           <p class="progress-subtext">Developing Interactive Websites</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="My professional career has largely been comprised of Applications, Implementation, and Solutions Engineering roles at software startups. I've developed an ability to learn complex concepts and communicate technical information effectively and simply as well as to bridge gaps for engineering teams to make certain everything gets done at the end of the day.">
             <div class="progress-bar" role="progressbar" style="width: 55%"></div>
           </div>
           <p class="progress-subtext">Applications, Technical Liaison, and Project Management</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="My first Adobe Photoshop and Illustrator training courses were at the age of 10 during a summer program. I started video editing with Final Cut Pro with courses in high school and have since switched over to Adobe Premiere Pro. Though I have, for some periods of time in the past, resorted to alternatives (including Gimp, Sketch.app, and iMovie) I’ve always felt the need to have design tools and the skills to use them on hand. I have designed logos, iconography, posters, and diagrams, touched up photos, and produced media content for various personal projects, clients, and other groups.">
             <div class="progress-bar" role="progressbar" style="width: 65%"></div>
           </div>
           <p class="progress-subtext">Visual Design with Adobe CC Tools</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="From the ubiquitous consumer cloud platforms that manage our personal data to commercial tools like the various CRMs, loT and Smart Device data platforms, G Suite, MS Azure, AWS, et cetera... Our world has moved into the cloud. My technical skills and experience working at an loT, SaaS-model cloud software company (as well as with many of these very platforms) give me a leg up on utilizing today's complex tools effectively.">
             <div class="progress-bar" role="progressbar" style="width: 75%"></div>
           </div>
           <p class="progress-subtext">Building Systems with Commercial Software Tools</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="I've worked extensively with IP and loT network devices both in my career and as an avid hobbyist. From LAN devices like routers & switches, printers, NAS, and home security to more sophisticated loT networks using protocols like ZigBee, INSTEON, Z-Wave, generic 802.15.4 (esp. Digi XBee), and more traditional WiFi and Bluetooth [LE], I have developed a solid knowledge base. I also have extensive experience wiring and installing devices and have done so in each of my last four homes as well as with experienced fellow engineers and technicians in the lab and onsite at commercial/industrial facilities.">
             <div class="progress-bar" role="progressbar" style="width: 55%"></div>
           </div>
           <p class="progress-subtext">Managing IP and Smart Device Networks</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="I see a future for myself in authoring computer programs to tackle the problems of the future and make people's lives simpler. With a mind for engineering and an ever-increasing proficiency in languages like JavaScript, PHP, Ruby, and Python, I’m eager to tackle any challenge or take on any role that pushes me to new horizons in my engineering journey.">
             <div class="progress-bar" role="progressbar" style="width: 35%"></div>
           </div>
           <p class="progress-subtext">Object-Oriented Programming</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="From collaborating with fellow QA engineers on a repository of test suites to hobby coding projects with peers, I've had my fair share of exposure to collaborating with git. I have adopted it as my primary tool for version control and now every line of code I write goes into repositories I manage on GitHub, where I'm a premium subscriber.">
             <div class="progress-bar" role="progressbar" style="width: 45%"></div>
           </div>
           <p class="progress-subtext">Collaborating with Teams Using Git</p>
-          <div class="progress">
+          <div class="progress" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Every day that I spend developing, I realize more and more how much of engineering is about research, finding the right approach, and engaging with the community.">
             <div class="progress-bar" role="progressbar" style="width: 85%"></div>
           </div>
-          <p class="progress-subtext">Fixing It with Code from Stack Overflow</p>
+          <p class="progress-subtext">Fixing It with Code from Stack Overflow!</p>
         </div>
       </div>
     </div>
@@ -357,7 +357,7 @@
             <span>&times;</span>
           </button>
         </div>
-        <p class="modal-subtitle">Say something about me, my work, or just about anything you happen to like a whole lot!</p>
+        <p class="modal-subtitle">Say something about me, my work, or just about <i>anything</i> you happen to like a whole lot!</p>
         <div class="modal-body">
           <form>
             <div class="form-row">
@@ -381,36 +381,32 @@
                 <textarea rows="4" placeholder="What would you like to say?"></textarea>
               </div>
             </div>
-            <div class="form row">
+            <div class="form row row--no-padding">
               <div class="form-group col-md-6">
                 <div class="custom-control custom-checkbox">
-                  <input id="js-testimonial-check-publish" class="custom-control-input" type="checkbox">
-                  <label class="custom-control-label" for="testimonial-check-publish">You can put up my testimonial for all to see!</label>
+                  <input id="js-testimonial-check-publish" class="custom-control-input" type="checkbox" checked>
+                  <label class="custom-control-label" for="js-testimonial-check-publish">You can post my testimonial publicly</label>
                 </div>
               </div>
               <div class="form-group col-md-6">
                 <div class="custom-control custom-checkbox">
-                  <input id="js-testimonial-check-anonymous" class="custom-control-input" type="checkbox">
-                  <label class="custom-control-label" for="You can show my name and/or company">You can show my name and/or company</label>
+                  <input id="js-testimonial-check-attribute" class="custom-control-input" type="checkbox" checked>
+                  <label class="custom-control-label" for="js-testimonial-check-attribute">You can show my name and/or company</label>
                 </div>
               </div>
             </div>
 
-            <button id="js-testimonial-form-submit" class="btn btn-secondary" type="button">Submit</button>
+            <button id="js-testimonial-form-submit" class="btn btn-secondary modal__submit-btn" type="button">Submit</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-    Popover on top
-  </button>
-  <!-- div class="matte--spacer"></div -->
 <!-- ==== FOOTER ==== -->
   <nav class="navbar default navbar-info bg-info footer">
     <div class="container-fluid footer__container">
-      <div class="row">
+      <div class="row row--no-padding">
         <div class="col-sm-3 footer_col">
           <a class="link--icon footer__link--icon" target="_blank" href="https://www.linkedin.com/in/hraschke/"><i class="fab fa-linkedin footer__fa"></i></a>
           <a class="link--icon footer__link--icon" target="_blank" href="https://angel.co/henry-raschke"><i class="fab fa-angellist footer__fa"></i></a>
@@ -419,16 +415,29 @@
         </div>
         <div class="col-sm-6 footer_col">
           <p class="muted-text muted footer__muted">
-            Everything on this site was build from scratch in May 2018 by Henry Raschke.
+            <br />
+            Everything on this site was build from scratch by Henry Raschke using this stuff:
+            <br />
+            <i class="fab fa-html5 footer__icon--tiny"></i>
+            <i class="fab fa-css3-alt footer__icon--tiny"></i>
+            <i class="fab fa-js footer__icon--tiny"></i>
+            <img class="footer__icon--tiny" src="../rsc/img/icn/jquery_icon.svg" />
+            <img class="footer__icon--tiny" src="../rsc/img/icn/bootstrap_icon.svg" />
+            <i class="fab fa-font-awesome footer__icon--tiny"></i>
+            <i class="fab fa-php footer__icon--tiny"></i>
+            <i class="fa fa-camera footer__icon--tiny"></i>
           </p>
         </div>
         <div class="col-sm-3 footer_col">
           <a class="link--icon footer__link--icon" target="_blank" href="https://www.facebook.com/h3nryraschke"><i class="fab fa-facebook footer__fa"></i></a>
           <a class="link--icon footer__link--icon" target="_blank" href="https://www.instagram.com/imakelotsafood"><i class="fab fa-instagram footer__fa"></i></a>
           <a class="link--icon footer__link--icon" target="_blank" href="https://open.spotify.com/user/125879991?si=VjWvSTzeQ4GhUaw111zDyA"><i class="fab fa-spotify footer__fa"></i></a>
-          <a class="link--icon footer__link--icon" target="_blank" href="https://unsplash.com/"><i class="fa fa-camera footer__fa" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Photo credit: https://www.unsplash.com"></i></a>
+          <a class="link--icon footer__link--icon" target="_blank" href="https://soundcloud.com/kapple_snap"><i class="fab fa-soundcloud footer__fa"></i></a>
         </div>
       </div>
+      <p class="shrink-me no-margin">current version: 0.1 (updated 05/29/2018)</p>
+      <a class="no-margin text-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Good Find! Unfortunately, ULTRASECRET CATMODE is not yet available...">ULTRASECRET CATMODE</a>
+      <p class="shrink-me no-margin">© May 2018 Henry W. Raschke</p>
     </div>
   </nav>
 

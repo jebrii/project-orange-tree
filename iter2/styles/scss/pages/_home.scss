@@ -18,7 +18,7 @@
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
-  top: 32px;
+  top: 80px;
   z-index: 0;
 
   .headshot--main {
@@ -31,12 +31,14 @@
 // ==== CAROUSEL ====
 .section--carousel {
   background-color: rgba(0,0,0,0);
-  padding: 300px 0 140px 0;
+  padding: 100px 0 140px 0;
 }
 
 .matte--carousel {
+  border-top: 5px solid $info;
+  border-radius: 10px;
   position: absolute;
-  top: 850px;
+  top: 580px;
   height: 1000px;
 }
 
@@ -53,7 +55,6 @@
   color: $dark;
 }
 .progress {
-  margin-top: 24px;
   height: 24px;
 }
 

@@ -78,9 +78,6 @@
   }
 }
 
-.matte--spacer {
-  height: 150px;
-}
 
 .footer {
   border-top: 5px solid $primary;
@@ -98,7 +95,19 @@
     }
   }
   .footer__muted {
+    padding: 0 10%;
     text-align: center;
     color: $dark;
+    font-weight: 400;
   }
+  img {
+    height: 0.9em;
+    fill: $dark;
+    vertical-align: top;
+  }
+  .footer__icon--tiny {
+    margin: 10px;
+    font-size: 1.5em;
+  }
+
 }
